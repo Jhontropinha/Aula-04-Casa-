@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,97 @@
 </head>
 <body>
     <h1>Loja Principal</h1>
-    <p>Bem-vindo à Loja Principal!</p>
-    <h2>Escolha uma loja para visitar:</h2>
-    <ul>
-        <li><a href="../html/pagina1.html">Loja do Bolsonaro</a></li>
-        <li><a href="../html/pagina2.html">Loja do Lula</a></li>
-        <li><a href="../html/pagina3.html">Loja do Renan Santos</a></li>
-    </ul>
+    <hr />
+ 
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr valign="top">
+            <!-- Coluna esquerda: estilo "caixas" como na imagem (Páginas / Categorias) -->
+            <td width="30%">
+ 
+                <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                    <tr>
+                        <td><b>Lojas Disponíveis</b></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox"> Loja do Bolsonaro<br>
+                            <input type="checkbox"> Loja do Lula<br>
+                            <input type="checkbox"> Loja do Renan Santos<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Selecionar Tudo</a> &nbsp; <a href="#">Adicionar ao Menu</a></td>
+                    </tr>
+                </table>
+ 
+                <br>
+ 
+                <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                    <tr>
+                        <td><b>Categorias</b></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox"> Direita<br>
+                            <input type="checkbox"> Esquerda<br>
+                            <input type="checkbox"> Independentes<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Selecionar Tudo</a> &nbsp; <a href="#">Adicionar ao Menu</a></td>
+                    </tr>
+                </table>
+ 
+            </td>
+ 
+            <!-- Coluna direita: estilo "Menu Principal" como na imagem -->
+            <td width="70%">
+ 
+                <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                    <tr>
+                        <td><b>Nome do Menu:</b> Loja Principal</td>
+                    </tr>
+                </table>
+ 
+                <br>
+ 
+                <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                    <tr>
+                        <th align="left">Loja</th>
+                        <th align="left">Tipo</th>
+                        <th align="left">Ação</th>
+                    </tr>
+                    <tr>
+                        <td>Loja do Bolsonaro</td>
+                        <td>Personalizado</td>
+                        <td><a href="../html/pagina1.html">Visitar Loja</a></td>
+                    </tr>
+                    <tr>
+                        <td>Loja do Lula</td>
+                        <td>Personalizado</td>
+                        <td><a href="../html/pagina2.html">Visitar Loja</a></td>
+                    </tr>
+                    <tr>
+                        <td>Loja do Renan Santos</td>
+                        <td>Personalizado</td>
+                        <td><a href="../html/pagina3.html">Visitar Loja</a></td>
+                    </tr>
+                </table>
+ 
+                <br>
+ 
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="right">
+                            <a href="#">Salvar Menu</a>
+                        </td>
+                    </tr>
+                </table>
+ 
+            </td>
+        </tr>
+    </table>
+ 
 </body>
 </html>
-</body>
-</html>
+ 
