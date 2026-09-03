@@ -1,104 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja Principal - escolha entre a Loja do Bolsonaro, Loja do Lula ou Loja do Renan Santos e compare preços dos produtos.">
     <title>Loja Principal</title>
 </head>
 <body>
+
+    <!-- ====================== CABEÇALHO ====================== -->
     <h1>Loja Principal</h1>
-    <hr />
- 
-    <table border="1" cellpadding="10" cellspacing="0" width="100%">
-        <tr valign="top">
-            <!-- Coluna esquerda: estilo "caixas" como na imagem (Páginas / Categorias) -->
-            <td width="30%">
- 
-                <table border="1" cellpadding="8" cellspacing="0" width="100%">
-                    <tr>
-                        <td><b>Lojas Disponíveis</b></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox"> Loja do Bolsonaro<br>
-                            <input type="checkbox"> Loja do Lula<br>
-                            <input type="checkbox"> Loja do Renan Santos<br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Selecionar Tudo</a> &nbsp; <a href="#">Adicionar ao Menu</a></td>
-                    </tr>
-                </table>
- 
-                <br>
- 
-                <table border="1" cellpadding="8" cellspacing="0" width="100%">
-                    <tr>
-                        <td><b>Categorias</b></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox"> Direita<br>
-                            <input type="checkbox"> Esquerda<br>
-                            <input type="checkbox"> Independentes<br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Selecionar Tudo</a> &nbsp; <a href="#">Adicionar ao Menu</a></td>
-                    </tr>
-                </table>
- 
-            </td>
- 
-            <!-- Coluna direita: estilo "Menu Principal" como na imagem -->
-            <td width="70%">
- 
-                <table border="1" cellpadding="8" cellspacing="0" width="100%">
-                    <tr>
-                        <td><b></b> Lojas Disponiveis </td>
-                    </tr>
-                </table>
- 
-                <br>
- 
-                <table border="1" cellpadding="10" cellspacing="0" width="100%">
-                    <tr>
-                        <th align="left">Loja</th>
-                        <th align="left">Tipo</th>
-                        <th align="left">Ação</th>
-                    </tr>
-                    <tr>
-                        <td>Loja do Bolsonaro</td>
-                        <td>Personalizado</td>
-                        <td><a href="../html/pagina1.html">Visitar Loja</a></td>
-                    </tr>
-                    <tr>
-                        <td>Loja do Lula</td>
-                        <td>Personalizado</td>
-                        <td><a href="../html/pagina2.html">Visitar Loja</a></td>
-                    </tr>
-                    <tr>
-                        <td>Loja do Renan Santos</td>
-                        <td>Personalizado</td>
-                        <td><a href="../html/pagina3.html">Visitar Loja</a></td>
-                    </tr>
-                </table>
- 
-                <br>
- 
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                        <td align="right">
-                            <a href="#">Salvar Menu</a>
-                        </td>
-                    </tr>
-                </table>
- 
-            </td>
+    <p>Bem-vindo à Loja Principal!</p>
+
+    <!-- ====================== NAVEGAÇÃO ENTRE LOJAS ====================== -->
+    <h2>Escolha uma loja para visitar:</h2>
+    <details>
+        <summary>Consultar Lojas</summary>
+        <p>
+            <a href="../html/pagina1.html">Loja do Bolsonaro</a> |
+            <a href="../html/pagina2.html">Loja do Lula</a> |
+            <a href="../html/pagina3.html">Loja do Renan Santos</a>
+        </p>
+    </details>
+
+    <!-- ====================== COMPARATIVO DE PREÇOS ====================== -->
+    <h2>Compare os Preços</h2>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+        <tr>
+            <th align="left">Loja</th>
+            <th align="left">Produto</th>
+            <th align="left">Preço</th>
+            <th align="left">Ação</th>
+            <th align="left">Consultar Loja</th>
+        </tr>
+        <tr>
+            <td>Bolsonaro</td>
+            <td>Boné do Bolsonaro</td>
+            <td>R$ 49,90</td>
+            <td><a href="../html/checkout.html?loja=Bolsonaro&produto=Bone+do+Bolsonaro&preco=49.90">Comprar</a></td>
+             <td><a href="../html/pagina1.html">Consultar Loja</a></td>
+        </tr>
+        <tr>
+            <td>Lula</td>
+            <td>Boné do Lula</td>
+            <td>R$ 49,90</td>
+            <td><a href="../html/checkout.html?loja=Lula&produto=Bone+do+Lula&preco=49.90">Comprar</a></td>
+            <td><a href="../html/pagina2.html">Consultar Loja</a></td>
+        </tr>
+        <tr>
+            <td>Renan Santos</td>
+            <td>Copo Stanley do Renan Santos</td>
+            <td>R$ 89,90</td>
+            <td><a href="../html/checkout.html?loja=RenanSantos&produto=Copo+Stanley+do+Renan+Santos&preco=89.90">Comprar</a></td>
+            <td><a href="../html/pagina3.html">Consultar Loja</a></td>
         </tr>
     </table>
- 
+
+    <br>
+
+    <!-- ====================== SOBRE O PROJETO ====================== -->
+    <details>
+        <summary>Sobre o projeto</summary>
+        <p>Este site reúne três lojas independentes de produtos de apoio político, cada uma com seu próprio catálogo. Todas as compras são finalizadas em um checkout único e compartilhado.</p>
+    </details>
+
+    <hr>
+
+    <!-- ====================== RODAPÉ ====================== -->
+    <footer>
+       
+    </footer>
+
 </body>
 </html>
- 
