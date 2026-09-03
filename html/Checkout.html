@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Finalizar Compra</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <hr />
+    <p>Finalize sua compra preenchendo os dados abaixo. Este checkout é utilizado pelos produtos da Loja do Bolsonaro, Loja do Lula e Loja do Renan Santos.</p>
+
+    <form action="#" method="get">
+
+        <h2>Dados do Produto</h2>
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr>
+                <td width="200"><b>Loja</b></td>
+                <td>
+                    <input type="radio" name="loja" value="Bolsonaro" checked> Loja do Bolsonaro
+                    &nbsp;
+                    <input type="radio" name="loja" value="Lula"> Loja do Lula
+                    &nbsp;
+                    <input type="radio" name="loja" value="RenanSantos"> Loja do Renan Santos
+                </td>
+            </tr>
+            <tr>
+                <td><b>Nome do Produto</b></td>
+                <td><input type="text" name="produto" value="" size="40"></td>
+            </tr>
+            <tr>
+                <td><b>Preço (R$)</b></td>
+                <td><input type="text" name="preco" value="" size="20"></td>
+            </tr>
+            <tr>
+                <td><b>Quantidade</b></td>
+                <td><input type="number" name="quantidade" value="1" min="1"></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>Dados do Comprador</h2>
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr>
+                <td width="200"><b>Nome Completo</b></td>
+                <td><input type="text" name="nome_completo" size="40"></td>
+            </tr>
+            <tr>
+                <td><b>E-mail</b></td>
+                <td><input type="email" name="email" size="40"></td>
+            </tr>
+            <tr>
+                <td><b>CPF</b></td>
+                <td><input type="text" name="cpf" size="20"></td>
+            </tr>
+            <tr>
+                <td><b>Endereço</b></td>
+                <td><input type="text" name="endereco" size="40"></td>
+            </tr>
+            <tr>
+                <td><b>Cidade</b></td>
+                <td><input type="text" name="cidade" size="30"></td>
+            </tr>
+            <tr>
+                <td><b>CEP</b></td>
+                <td><input type="text" name="cep" size="20"></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>Forma de Pagamento</h2>
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr>
+                <td width="200">
+                    <input type="radio" name="pagamento" value="cartao" checked> Cartão de Crédito<br>
+                    <input type="radio" name="pagamento" value="boleto"> Boleto Bancário<br>
+                    <input type="radio" name="pagamento" value="pix"> Pix
+                </td>
+                <td>
+                    Número do Cartão: <input type="text" name="cartao_numero" size="20"><br><br>
+                    Nome no Cartão: <input type="text" name="cartao_nome" size="20"><br><br>
+                    Validade: <input type="text" name="cartao_validade" size="8" placeholder="MM/AA">
+                    &nbsp; CVV: <input type="text" name="cartao_cvv" size="5">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <input type="submit" value="Finalizar Compra">
+
+    </form>
+
+    <br>
+    <a href="../html/pagina_principal.html">voltar para a Loja Principal</a>
+
+</body>
+</html>
