@@ -14,7 +14,7 @@ O PolitiShop simula uma vitrine de e-commerce com três lojas distintas:
 
 A partir da página principal, o usuário pode navegar entre as lojas, comparar preços de produtos em destaque e finalizar a compra em um checkout único e compartilhado entre todas as lojas.
 
-## Captura de tela
+## Pagina Home
 
 ![Página Principal do PolitiShop](.//Screenshots/Home-preview.jpeg)
 
